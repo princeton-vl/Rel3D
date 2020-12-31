@@ -1,0 +1,18 @@
+EXP:
+  MODEL_NAME: "trans"
+  EXP_ID: "mlp_raw"
+
+DATALOADER:
+  datapath: "data/c_0.9_c_0.1.json"
+  load_img: False
+  trans_vec: ["raw_absolute"]
+  norm_data: True
+
+TRAIN:
+  num_epochs: 200
+  l2: 1e-4
+
+MODEL:
+  TRANS:
+    feat_dim: 512
+    with_class: False

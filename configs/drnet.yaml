@@ -1,0 +1,22 @@
+EXP:
+  MODEL_NAME: "drnet"
+  EXP_ID: "drnet_default"
+
+DATALOADER:
+  datapath: "data/c_0.9_c_0.1.json"
+  load_img: True
+  crop: True
+  norm_data: True
+  data_aug_shift: True
+  data_aug_color: True
+  resize_mask: True
+
+TRAIN:
+  num_epochs: 200
+  l2: 1e-4
+
+MODEL:
+  DRNET:
+    only_2d: False
+    only_appr: False
+    feature_dim: 128

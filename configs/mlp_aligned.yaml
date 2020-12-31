@@ -1,0 +1,18 @@
+EXP:
+  MODEL_NAME: "trans"
+  EXP_ID: "mlp_aligned"
+
+DATALOADER:
+  datapath: "data/c_0.9_c_0.1.json"
+  load_img: False
+  trans_vec: ["aligned_absolute"]
+  norm_data: True
+
+TRAIN:
+  num_epochs: 200
+  l2: 0.0
+
+MODEL:
+  TRANS:
+    feat_dim: 2048
+    with_class: False

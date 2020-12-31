@@ -1,0 +1,17 @@
+EXP:
+  MODEL_NAME: "trans"
+  EXP_ID: "trans_default"
+
+DATALOADER:
+  datapath: "data/final_02_29_c_0.9_c_0.1_c_1.0.json"
+  load_img: False
+  trans_vec: ["aligned_absolute"]
+  norm_data: True
+
+TRAIN:
+  num_epochs: 200
+
+MODEL:
+  TRANS:
+    feat_dim: 128
+    with_class: False

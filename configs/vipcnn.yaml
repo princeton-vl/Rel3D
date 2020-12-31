@@ -1,0 +1,20 @@
+EXP:
+  MODEL_NAME: "vipcnn"
+  EXP_ID: "vipcnn_default"
+
+DATALOADER:
+  datapath: "data/c_0.9_c_0.1.json"
+  load_img: True
+  crop: False
+  norm_data: True
+  data_aug_shift: True
+  data_aug_color: True
+
+TRAIN:
+  num_epochs: 200
+  l2: 0.0
+
+MODEL:
+  VIPCNN:
+    roi_size: 7
+    backbone: "resnet18"
