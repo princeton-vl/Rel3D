@@ -11,22 +11,22 @@ mkdir tmp
 key="$1"
 case $key in
 	data_min)
-		wgetgdrive 1sebXU7pZ0FI7lG28OkH5qSnWHpADQRFi tmp/data_min.zip
+		wgetgdrive 14KiePTos5bQvaH6P0Pi5YyhRlvpB74aJ tmp/data_min.zip
 		unzip -o tmp/data_min.zip
 		mkdir -p data
 		mv data_min/* data
 		rm -rf data_min
     		;;
 	data)
-		wgetgdrive 1zMQeG0_l7sfoRs3Dem4iEUVCNdc7BLvY tmp/data.zip
+		wgetgdrive 1hZD7llxwQ3samEGl8AgbQ_pPUODCi6ov tmp/data.zip
 		unzip -o tmp/data.zip
     		;;
 	pretrained_models)
-		wgetgdrive 18f-oVqUI1RdPfawEsAZBbUvswo309D_E tmp/pretrained_models.zip
+		wgetgdrive 1w7tr4XxdbtSzZQ4i3GCazCGMczz9M-w9 tmp/pretrained_models.zip
 		unzip -o tmp/pretrained_models.zip
     		;;
 	data_raw)
-		wgetgdrive 1MSMwnX0znCfgEisj7zJ4ohFWJDrsxeme tmp/20200223_selected.zip
+		wgetgdrive 1qJCrW2iTQiVtKQFiAjVsKP2bci4v941z tmp/20200223_selected.zip
 		unzip -o tmp/20200223_selected.zip
 		mkdir -p data
 		mv 20200223 data
